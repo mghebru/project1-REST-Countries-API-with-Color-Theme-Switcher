@@ -41,7 +41,7 @@
 }
 
 
-@media(max-width: 840px) {
+@media(max-width: 900px) {
     .country-details {
         flex-direction: column;
         align-items: flex-start;
