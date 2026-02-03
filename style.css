@@ -41,6 +41,7 @@ a {
     display: flex;
     gap: 64px;
     flex-wrap: wrap;
+    margin-inline: auto;
     justify-content: space-between;
 }
 
@@ -78,6 +79,8 @@ a {
 }
 
 .search-filter-container {
+    max-width: 1200px;
+    margin-inline: auto;
     margin-top: 16px;
     margin-bottom: 48px;
     display: flex;
