@@ -19,6 +19,7 @@
 
 .country-details img {
     width: 50%;
+    border: 1px solid #ddd;
 }
 
 .details-text-container {
