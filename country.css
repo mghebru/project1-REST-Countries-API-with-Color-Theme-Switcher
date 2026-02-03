@@ -1,8 +1,9 @@
-.back-button{
+.back-button {
     padding: 6px 24px;
     box-shadow: 0 0 4px 0px rgba(0, 0, 0, 0.2);
     border-radius: 7px;
 }
+
 .country-details {
     display: flex;
     align-items: center;
@@ -22,9 +23,23 @@
     max-height: 180px;
     flex-wrap: wrap;
 }
+
 .details-text p {
     margin: 0;
 }
+
+.border-countries {
+    margin-top: 48px;
+}
+
+.border-countries a {
+    padding: 4px 16px;
+    box-shadow: 0 0 4px 0px rgba(0, 0, 0, 0.2);
+    border-radius: 7px;
+    margin-inline: 4px;
+    font-size: 14px;
+}
+
 
 @media(max-width: 840px) {
     .country-details {
@@ -33,12 +48,14 @@
         margin-top: 32px;
         gap: 24px;
     }
+
     .details-text-container {
         max-height: unset;
     }
+
     .country-details img {
         width: 100%;
         max-width: 400px;
     }
-    
+
 }
