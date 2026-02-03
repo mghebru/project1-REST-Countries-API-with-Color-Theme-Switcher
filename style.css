@@ -102,6 +102,7 @@ a {
     border: none;
     outline: none;
     padding: 16px;
+    width: 90%;
 }
 
 .search-container input::placeholder {

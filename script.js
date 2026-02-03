@@ -1,9 +1,15 @@
 const countriesContainer = document.querySelector('.countries-container')
 const filterByRegion = document.querySelector('.filter-by-region')
+const searchInput = document.querySelector('.search-container')
 
-fetch(`https://restcountries.com/v3.1/independent?status=true`)
+let allCountriesData
+
+fetch('https://restcountries.com/v3.1/independent?status=true')
     .then((res) => res.json())
-    .then(renderCountries)
+    .then((data) => {
+        renderCountries(data)
+        allCountriesData = data
+    })
 
 filterByRegion.addEventListener('change', (e) => {
     fetch(`https://restcountries.com/v3.1/region/${filterByRegion.value}`)
@@ -33,7 +39,10 @@ function renderCountries(data) {
     });
 }
 
-
+searchInput.addEventListener('input', (e) => {
+    const filteredCountries = allCountriesData.filter((country) => country.name.common.toLowerCase().includes(e.target.value.toLowerCase()))
+    renderCountries(filteredCountries)
+})
 
 
 // const cardImg = document.createElement('img')
