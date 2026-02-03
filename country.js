@@ -40,7 +40,7 @@ fetch(`https://restcountries.com/v3.1/name/${countryName}?fullText=true`)
     }
 
     if(country.borders) {
-        
+
         country.borders.forEach((border) => {
            // console.log(border)
             fetch(`https://restcountries.com/v3.1/alpha/${border}`)
@@ -48,6 +48,7 @@ fetch(`https://restcountries.com/v3.1/name/${countryName}?fullText=true`)
             .then(([borderCountry]) => {
                 const borderCountryTag = document.createElement('a')
                 borderCountryTag.innerText = borderCountry.name.common
+                borderCountryTag.href = `country.html?name=${borderCountry.name.common}`
                 //console.log(borderCountryTag)
                 borderCountries.append(borderCountryTag)
             })
