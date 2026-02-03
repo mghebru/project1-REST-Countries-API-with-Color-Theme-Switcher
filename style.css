@@ -77,3 +77,17 @@ a {
 .country-card img {
     width: 100%;
 }
+
+@media(max-width: 768px) {
+    .countries-container {
+        justify-content: center;
+    }
+
+    .title {
+        font-size: 16px;
+    }
+
+    .header-content p {
+        font-size: 12px;
+    }
+}
