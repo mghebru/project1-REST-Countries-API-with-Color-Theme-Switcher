@@ -7,6 +7,7 @@
 .country-details-container {
     max-width: 1200px;
     margin-inline: auto;
+    margin-top: 32px;
 }
 
 .country-details {
