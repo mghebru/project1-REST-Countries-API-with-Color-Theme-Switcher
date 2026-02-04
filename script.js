@@ -2,6 +2,8 @@ const countriesContainer = document.querySelector('.countries-container')
 const filterByRegion = document.querySelector('.filter-by-region')
 const searchInput = document.querySelector('.search-container')
 
+const themChanger = document.querySelector('.theme-changer')
+
 let allCountriesData
 
 fetch('https://restcountries.com/v3.1/independent?status=true')
@@ -44,6 +46,9 @@ searchInput.addEventListener('input', (e) => {
     renderCountries(filteredCountries)
 })
 
+themChanger.addEventListener('click', () => {
+    document.body.classList.toggle('dark')
+})
 
 // const cardImg = document.createElement('img')
 // cardImg.src = 'https://flagcdn.com/de.svg'

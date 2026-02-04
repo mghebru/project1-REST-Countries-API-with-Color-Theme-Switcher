@@ -2,9 +2,22 @@
     box-sizing: border-box;
 }
 
+:root {}
+
 body {
+    --background-color: white;
+    --text-color: black;
+    --elements-color: white;
     margin: 0;
-    font-family: Nunito;
+    font-family: Nunito, sans-serif;
+    background-color: var(--background-color);
+    color: var(--text-color);
+}
+
+body.dark {
+    --background-color: hsl(207, 26%, 17%);
+    --text-color: white;
+    --elements-color: hsl(209, 23%, 22%);
 }
 
 .title {
@@ -23,6 +36,7 @@ a {
 .header-container {
     box-shadow: 0 4px 4px 0px rgba(0, 0, 0, 0.1);
     padding-inline: 24px;
+    background-color: var(--elements-color);
 }
 
 .header-content {
@@ -34,7 +48,9 @@ a {
     padding-inline: 24px;
 
 }
-
+.theme-changer {
+    cursor: pointer;
+}
 .countries-container {
     max-width: 1200px;
     margin-top: 16px;
@@ -52,7 +68,8 @@ a {
     overflow: hidden;
     padding-bottom: 24px;
     box-shadow: 0 0px 8px 0px rgba(0, 0, 0, 0.2);
-    transition: all 0.2s ease;
+    transition: all 0.2s ease-in-out;
+    background-color: var(--elements-color);
 }
 
 .country-card:hover {
@@ -96,6 +113,8 @@ a {
     padding: 0 24px;
     color: #9999;
     overflow: hidden;
+    background-color: var(--elements-color);
+    color: var(--text-color);
 }
 
 .search-container input {
@@ -103,6 +122,8 @@ a {
     outline: none;
     padding: 16px;
     width: 90%;
+    background-color: inherit;
+    color: inherit;
 }
 
 .search-container input::placeholder {
@@ -116,6 +137,8 @@ a {
     outline: none;
     box-shadow: 0 0px 8px 0px rgba(0, 0, 0, 0.15);
     border-radius: 4px;
+    background-color: var(--elements-color);
+    color: var(--text-color);
 }
 
 @media(max-width: 768px) {
