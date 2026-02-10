@@ -35,23 +35,21 @@ Border countries
 
 **⚙️ Project Setup**
 
-Clone the repository:
+**Clone the repository:**
 
-git clone https://github.com/your-username/rest-countries-explorer.git
-
-
-Navigate into the project folder:
-
-cd rest-countries-explorer
+git clone https://github.com/mghebru/project1-REST-Countries-API-with-Color-Theme-Switcher/
 
 
-Open the project:
+**Navigate into the project folder:**
 
-Use Live Server in VS Code
+cd project1-REST-Countries-API-with-Color-Theme-Switcher
 
-OR open index.html directly in your browser
 
-No additional dependencies or installations are required.
+**Open the project:**
+
+Open index.html in your web browser
+
+OR use Live Server (VS Code) for a local development preview
 
 
 🚀 Live Demo
@@ -60,13 +58,18 @@ No additional dependencies or installations are required.
 
  API Used: https://restcountries.com/
 
+
+**	📄 License**
+
+This project is open source and free to use under the MIT License.
+
+
 **Reflection**
 
 One of the main challenges I faced during this project was working with API calls and making sure that country data was displayed correctly without causing errors or 
 performance issues.Another challenge was managing the theme switcher functionality. Implementing light and dark modes required careful use of CSS to ensure consistent styling across 
 the application. I also wanted the theme preference to persist, so I stored the selected theme in localStorage, allowing the app to remember the user’s choice even after a 
-page refresh. This added a more personalized and user-friendly touch to the project. Parsing and displaying API data such as languages, currencies, and border countries was also tricky at first. The API returns complex objects, 
-and accessing this information incorrectly caused errors for me. Breaking the logic into smaller helper functions made the code easier to read, debug,
+page refresh. This added a more personalized and user-friendly touch to the project. Parsing and displaying API data such as languages, currencies, and border countries was also difficult at first. The API returns complex objects, and accessing this information incorrectly caused errors for me. Breaking the logic into smaller helper functions made the code easier to read, debug,
 and maintain.
 
 If I were to improve this project in the future, I would also work on cleaner code organization and explore adding new features such as an interactive map to visually
