@@ -33,6 +33,27 @@ Border countries
 📱 Fully responsive design (mobile, tablet, desktop)
 
 
+**⚙️ Project Setup**
+
+Clone the repository:
+
+git clone https://github.com/your-username/rest-countries-explorer.git
+
+
+Navigate into the project folder:
+
+cd rest-countries-explorer
+
+
+Open the project:
+
+Use Live Server in VS Code
+
+OR open index.html directly in your browser
+
+No additional dependencies or installations are required.
+
+
 🚀 Live Demo
 
  Live Site: [(https://restcountries-color.netlify.app/)]
