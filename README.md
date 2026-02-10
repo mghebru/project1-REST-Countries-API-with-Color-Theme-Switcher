@@ -1,4 +1,5 @@
 **🌍 REST Countries Explorer**
+
 With Light & Dark Theme Switcher
 
 World Explorer is a simple, responsive web application that allows users to explore countries around the world using the REST Countries API. 
@@ -28,13 +29,15 @@ Border countries
 
 🌗 Light & Dark Mode Toggle (theme preference persists)
 
+
 📱 Fully responsive design (mobile, tablet, desktop)
 
 
 🚀 Live Demo
 
-👉 Live Site: [(https://restcountries-color.netlify.app/)]
-👉 API Used: https://restcountries.com/
+ Live Site: [(https://restcountries-color.netlify.app/)]
+
+ API Used: https://restcountries.com/
 
 **Reflection**
 
