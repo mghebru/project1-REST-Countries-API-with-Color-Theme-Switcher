@@ -6,6 +6,12 @@ const themChanger = document.querySelector('.theme-changer')
 
 let allCountriesData
 
+
+const savedTheme = localStorage.getItem('theme');
+if (savedTheme === 'dark') {
+    document.body.classList.add('dark');
+}
+
 fetch('https://restcountries.com/v3.1/independent?status=true')
     .then((res) => res.json())
     .then((data) => {
@@ -48,6 +54,11 @@ searchInput.addEventListener('input', (e) => {
 
 themChanger.addEventListener('click', () => {
     document.body.classList.toggle('dark')
+
+     localStorage.setItem(
+        'theme',
+        document.body.classList.contains('dark') ? 'dark' : 'light'
+    );
 })
 
 // const cardImg = document.createElement('img')
