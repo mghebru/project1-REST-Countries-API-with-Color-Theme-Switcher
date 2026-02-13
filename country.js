@@ -13,6 +13,10 @@ const borderCountries = document.querySelector('.border-countries')
 
 const themChanger = document.querySelector('.theme-changer')
 
+const savedTheme = localStorage.getItem('theme');
+if (savedTheme === 'dark') {
+    document.body.classList.add('dark');
+}
 
 fetch(`https://restcountries.com/v3.1/name/${countryName}?fullText=true`)
 .then((res) => res.json()
@@ -61,4 +65,9 @@ fetch(`https://restcountries.com/v3.1/name/${countryName}?fullText=true`)
 
 themChanger.addEventListener('click', () => {
     document.body.classList.toggle('dark')
+
+       localStorage.setItem(
+        'theme',
+        document.body.classList.contains('dark') ? 'dark' : 'light'
+    );
 })
